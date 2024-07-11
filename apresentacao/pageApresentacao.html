@@ -17,8 +17,8 @@
         }
 
         header {
-            background-color: #333;
-            color: #fff;
+            background-color: #008080;
+            color: #ffffff;
             padding: 10px 0;
             text-align: center;
         }
@@ -41,7 +41,7 @@
             display: inline-block;
             width: calc(25% - 20px);
             margin-right: 20px;
-            background-color: #444;
+            background-color: hsl(283, 85%, 27%);
             padding: 10px;
             border-radius: 5px;
             cursor: pointer;
@@ -50,7 +50,7 @@
         }
 
         .habilidade-item:hover {
-            background-color: #555;
+            background-color: #b10000;
         }
 
         .habilidade-descricao {
@@ -75,7 +75,7 @@
         }
 
         footer {
-            background-color: #333;
+            background-color: #008080;
             color: #fff;
             text-align: center;
             padding: 10px 0;
@@ -95,7 +95,7 @@
         }
 
         footer ul li a {
-            color: #fff;
+            color: #10130b;
             text-decoration: none;
         }
 
@@ -103,7 +103,7 @@
             text-decoration: underline;
         }
         .habilidade-descricao {
-            color: #4B0082;
+            color: hsl(197, 86%, 45%);
             justify-content: center;
         }
     </style>
@@ -144,6 +144,7 @@
         <div class="container">
             <h2>Introdução</h2>
             <p id="descricaoDigitada"></p>
+            <!-- <p> mais informções peessoais, estudos, formação, etc. </p> -->
         </div>
     </section>
 
@@ -186,13 +187,41 @@
                     <h4>Loja Virtual Completa</h4>
                     <p>Desenvolvendo uma loja virtual completa com funcionalidades de carrinho de compras, checkout e
                         administração de produtos.</p>
+                        <div class="conter" style="background-color: white;">
+                            <h4>LOJA:</h4>
+                            <div id="image" class="carousel slide" data-ride="carousel"> 
+                                <div class="carousel-inner">
+                                    <!-- imagem1 -->
+                                    <div class="carousel-item active">
+                                        <img src="../public/img/img1.jfif" class="d-block w-100" alt="Imagem 1">
+                                    </div>
+                                    <!-- imagem 2 -->
+                                    <div class="carousel-item">
+                                        <img src="../public/img/img2.jfif" class="d-block w-100" alt="Imagem 2">
+                                    </div>
+                                    <!-- imagem 3 -->
+                                    <div class="carousel-item">
+                                        <img src="../public/img/img3.jfif" class="d-block w-100" alt="Imagem 3">
+                                    </div>
+                                </div>
+                                <!-- voltar -->
+                                <a class="carousel-control-prev" href="#image" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <!-- PROXIMO -->
+                                <a class="carousel-control-next" href="#image" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </a>
+                            </div>
+                        </div>
+                        
                     <p>Tecnologias utilizadas: HTML, CSS, JavaScript e PHP.</p>
                 </li>
             </ul>
         </div>
     </section>
 
-    <footer>
+    <!-- <footer>
         <div class="container">
             <p>&copy; 2024 Seu Nome. Todos os direitos reservados.</p>
             <ul>
@@ -200,7 +229,7 @@
                 <li><a href="#">Termos de Uso</a></li>
             </ul>
         </div>
-    </footer>
+    </footer> -->
 
     <!-- Scripts JavaScript -->
     <script src="../public/js/jquery.min.js"></script>
@@ -217,7 +246,7 @@
 });
 
 
-        var textoDigitado = "Jovem desenvolvedor, iniciando meus trabalhos com JavaScript, HTML, PHP e banco de dados.";
+        var textoDigitado = "Jovem desenvolvedor, iniciando meus trabalhos com JavaScript, HTML, PHP e banco de dados. Trabalhando na Visteon Amazonas, estilizando e criando os sites da mesma ";
         var descricaoElemento = document.getElementById('descricaoDigitada');
 
         function digitarTexto() {
@@ -231,7 +260,7 @@
                 } else {
                     clearInterval(intervalo);
                 }
-            }, 80); // Velocidade da digitação (em milissegundos)
+            }, 25); // Velocidade da digitação (em milissegundos)
         }
 
         window.onload = function () {
