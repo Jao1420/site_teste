@@ -58,7 +58,7 @@
             top: 100%;
             left: 50%;
             transform: translateX(-50%);
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color:#F0F8FF;
             color: #fff;
             padding: 5px 10px;
             border-radius: 5px;
@@ -101,6 +101,10 @@
 
         footer ul li a:hover {
             text-decoration: underline;
+        }
+        .habilidade-descricao {
+            color: #4B0082;
+            justify-content: center;
         }
     </style>
 </head>
@@ -150,22 +154,21 @@
                 <h4>PHP:</h4>
                 Primeira linguagem aprendida, com grande potencial de aplicabilidade:
                 <div class="habilidade-descricao">
-                    Linguagem de script do lado do servidor, amplamente utilizada para desenvolvimento web.
+                    <p><strong> Utilizada para construir sites dinâmicos e integração de aplicações no desenvolvimento de um sistema.</strong></p>
                 </div>
             </div>
             <div class="habilidade-item" title="">
                 <h4>JavaScript:</h4>
                 Liguagem utilizada para a dinâmica do site, assim como as suas interações
                 <div class="habilidade-descricao">
-                    Cursos em andamento, com mais de 100 horas de tela, com criação de projetos e construção
+                    <p><strong> Cursos em andamento, com mais de 100 horas de tela, com criação de projetos e construção</strong></p>
                 </div>
             </div>
             <div class="habilidade-item" title="">
                 <h6>HTML</h6>
                 Linguagem de estruturação na criação de sites:
                 <div class="habilidade-descricao">
-                    Criação de sites, frontend para os seus projetos, sempre otimizado com estilização da junção de
-                    outras linguagens.
+                    <p><strong> Criação de sites, frontend para os seus projetos, sempre otimizado com estilização da junção de outras linguagens.</strong></p>
                 </div>
             </div>
         </div>
@@ -228,7 +231,7 @@
                 } else {
                     clearInterval(intervalo);
                 }
-            }, 90); 
+            }, 80); // Velocidade da digitação (em milissegundos)
         }
 
         window.onload = function () {
