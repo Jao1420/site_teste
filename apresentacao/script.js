@@ -1,9 +1,9 @@
-$(document).ready(function () {
-    $(document).on('click', '#BOTAO', function (e) {
-        alert('sem essa opção no momento :(');
-        // Aqui você pode adicionar outras ações que deseja realizar
-    });
-});
+// $(document).ready(function () {
+//     $(document).on('click', '#BOTAO', function (e) {
+//         alert('sem essa opção no momento :(');
+//         // Aqui você pode adicionar outras ações que deseja realizar
+//     });
+// });
 
 
 var textoDigitado =
