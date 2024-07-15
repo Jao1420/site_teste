@@ -1,9 +1,9 @@
-// $(document).ready(function () {
-//     $(document).on('click', '#BOTAO', function (e) {
-//         alert('sem essa opção no momento :(');
-//         // Aqui você pode adicionar outras ações que deseja realizar
-//     });
-// });
+$(document).ready(function () {
+    $(document).on('click', '#BOTAO', function (e) {
+        alert('sem essa opção no momento :(');
+        // Aqui você pode adicionar outras ações que deseja realizar
+    });
+});
 
 
 var textoDigitado =
@@ -21,7 +21,7 @@ function digitarTexto() {
         } else {
             clearInterval(intervalo);
         }
-    }, 25); // Velocidade da digitação (em milissegundos)
+    }, 25); // Velocidade da digitação 
 }
 
 window.onload = function () {
