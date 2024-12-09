@@ -5,9 +5,6 @@ $(document).ready(function () {
     });
 });
 
-
-
-
 var textoDigitado =
     "Jovem desenvolvedor, iniciando meus trabalhos com JavaScript, HTML, PHP e banco de dados. Trabalhando na Visteon Amazonas, estilizando e criando os sites da mesma ";
 var descricaoElemento = document.getElementById('descricaoDigitada');
