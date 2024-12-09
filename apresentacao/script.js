@@ -1,9 +1,11 @@
 $(document).ready(function () {
     $(document).on('click', '#BOTAO', function (e) {
-        alert('sem essa opção no momento :(');
-        // Aqui você pode adicionar outras ações que deseja realizar
+        // Usando Alertify.js
+        alertify.error('Sem essa opção no momento :(');
     });
 });
+
+
 
 
 var textoDigitado =
@@ -23,11 +25,12 @@ function digitarTexto() {
         }
     }, 25); // Velocidade da digitação 
 }
-
+///efeito de digitação
 window.onload = function () {
     digitarTexto();
 };
 
+/// mensagem que apareçe ao passar o mouse no tooltip
 $(function () {
     $('[data-toggle="tooltip"]').tooltip();
 });
